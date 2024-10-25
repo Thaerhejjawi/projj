@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+ <style>
+     img {
+         position:fixed;
+     }
+     img:hover {
+        
+         filter: brightness(200%);
+     }
+     h1{
+         margin-left:300px;
+         color:aliceblue;
+     }
+    
+    
+     body {
+         background-image: url('iv/bachg.jpg');
+         background-size: cover; 
+         background-position: center; 
+         background-repeat: no-repeat; 
+         height: 100vh; 
+     }
+     footer {
+         background: #000;
+         color: white;
+         padding: 20px;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 10vh; 
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+
+         footer p {
+             margin: 0;
+             font-size: 0.9rem;
+         }
+
+
+ </style>
+
+
+
+</head>
+
+
+
+<body id="bb">
+    <!--===================================================================================================-->
+     
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://localhost:65379/HtmlPage1.html?#">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://localhost:44343/HtmlPage1.html">Car</a>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                        <a class="btn btn-primary" href="https://www.facebook.com/thaerhejjaw?locale=ar_AR" role="button">facbook</a>
+                        <shadow> ||| </shadow>
+                        <a class="btn btn-warning" href="https://www.instagram.com/thaer7ejjawi/" role="button">insta</a>
+                    </ul>
+
+                    <form style="margin-left:650px" class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+                    </form>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+                </div>
+
+
+            </nav>    <!--===============================================================================-->
+
+    <h1 id="h1">Welcome to the world of the best cars </h1>
+
+    <button style="width:550px; margin-top:10px;margin-left:350px" type="button" class="btn btn-warning" onclick="chang()">G Class </button>
+    <button style="width:550px; margin-top:10px;margin-left:350px" type="button" class="btn btn-info" onclick="changg()">BMW M5 </button>
+    <video style="width:00px;height:350px;margin-top:30px" id="myVideo" controls autoplay loop muted>
+        <source src="" type="video/mp4" />
+    </video>
+    <img style="margin-top: 30px;width: 00px; height: 350px; margin-left: 100px" src="" />
+
+
+
+
+    <script>
+        function chang() {
+            const thaer = document.getElementsByTagName('img');
+            thaer[0].src = "iv/10-01-24-197073884.jpg";
+            thaer[0].style.width = "600px"
+
+            document.getElementById('myVideo').src = "iv/gvl.mp4";
+            document.getElementById('myVideo').style.width = "600px";
+            document.getElementById('bb').style.backgroundColor = "wh";
+            document.getElementById('h1').innerHTML = " G Class "
+        }
+        function changg() {
+            const thaerr = document.getElementsByTagName('img');
+            thaerr[0].src = "iv/bmw m5.jfif";
+            thaerr[0].style.width = "600px"
+            document.getElementById('myVideo').src = "iv/bmwm55.MP4";
+            document.getElementById('bb').style.backgroundColor = "black";
+            document.getElementById('myVideo').style.width = "600px";
+            document.getElementById('h1').innerHTML = " BMW M5 "
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Your Stylish Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
